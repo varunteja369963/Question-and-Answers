@@ -1,0 +1,90 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background: linear-gradient(45deg, #ff4c00, #ff8c00,#ffb700, #E95420) no-repeat;
+    background: -webkit-linear-gradient(45deg, #ff4c00, #ff8c00,#ffb700, #E95420) no-repeat;    
+    background: -moz-linear-gradient(45deg, #ff4c00, #ff8c00,#ffb700, #E95420) no-repeat;
+    background: -o-linear-gradient(45deg, #ff4c00, #ff8c00,#ffb700, #E95420) no-repeat;
+    min-height: 100%;
+   margin: 0px;
+   overflow: auto;   
+}
+
+@media screen and (min-width: 1001px) {
+      .error_box {
+        background-color: #ff8c00; 
+        width: 50%;
+        height: 300px;
+     color: #fff;
+     margin-top: 20vh;
+     margin-left: 25%;
+     margin-right: 25%;
+     overflow: auto;
+     border: 2px solid #ffb700;
+     font-size: 20px;
+     padding: 60px 80px;
+     border-radius: 10px;
+     word-spacing: 2px;     
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 1000px) {
+      .error_box {
+        background-color: #ff8c00; 
+        width: 50%;
+        height: 300px;
+     color: #fff;
+     margin-top: 20vh;
+     margin-left: 25%;
+     margin-right: 25%;
+     overflow: auto;
+     border: 2px solid #ffb700;
+     font-size: 20px;
+     padding: 60px 80px;
+     border-radius: 10px;
+     word-spacing: 2px;     
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 750px) {
+      .error_box {
+        background-color: #ff8c00; 
+        width: 70%;
+        height: 300px;
+     color: #fff;
+     margin-top: 20vh;
+     margin-left: 15%;
+     margin-right: 15%;
+     overflow: auto;
+     border: 2px solid #ffb700;
+     font-size: 20px;
+     padding: 50px 60px;
+     border-radius: 10px;
+     word-spacing: 2px;          
+    }
+}
+
+@media screen and (max-width: 400px) {
+      .error_box {
+        background-color: #ff8c00; 
+        width: 90%;
+        height: 250px;
+     color: #fff;
+     margin-top: 20vh;
+     margin-left: 5%;
+     margin-right: 5%;
+     overflow: auto;
+     border: 2px solid #ffb700;
+     font-size: 20px;
+     padding: 20px 30px;
+     border-radius: 10px;
+     word-spacing: 2px;
+    }
+}

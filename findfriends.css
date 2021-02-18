@@ -1,0 +1,384 @@
+body {
+    font-family: Courier New, serif, Arial, Helvetica, sans-serif; 
+    margin: 0px;
+}
+* {
+    box-sizing: border-box;
+}
+
+.searchbox {
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    border: 0.1em solid #e0e5e1;
+}
+
+    .line {
+        width: 100%;
+        margin-top: 30px;
+        border: 1px solid #c9cfca;
+    }
+
+    /*#############################################*/
+    .total_user_profile_info {
+        margin: 20px 5px 5px 15px;
+        }
+        
+         .userprofile_outer {
+            margin-top: 25px;
+        }
+        
+         .userprofile {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        
+         .profile_pic {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #000000;
+        }
+        
+         .user_info {
+          width: calc(100% - 40px);
+          width: -webkit-calc(100% - 40px);
+          width: -moz-calc(100% - 40px);
+          padding-left: 15px;
+        }
+        
+       .user_info .username{
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 3px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+         .user_info .ai2kla8_kdiocy {
+        text-decoration: none;
+        color: #000000;
+        }
+        
+         .user_info .gmail{
+            font-size: 12px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+     .addfriend{
+            width: 200px;
+            height: 20px;
+        background-color: #3b5998;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        }
+        
+         .cancelsentrequest{
+            width: 200px;
+            height: 20px;
+        background-color: #3b5998;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        }
+        
+         .unfriend{
+            width: 200px;
+            height: 20px;
+        background-color: #3b5998;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        }
+        
+         .this_is_your_best_friend{
+            width: 200px;
+            height: 20px;
+        background-color: #3b5998;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        }
+        
+         .acceptrequest {
+            width: 110px;
+            height: 20px;
+        background-color: #3b5998;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding-left: 1px;
+        }
+        
+         .cancelrequest {
+            width: 110px;
+            height: 20px;
+        background-color: #3b5998;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding-left: 1px;
+        margin-left: 5px;
+        }
+
+    #displaybox .total_user_profile_info {
+        margin-top: 20px;
+        }
+        
+     .acceptrequest_button {
+        width: 110px;
+        height: 20px;
+        background-color: #3b5998;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding-left: 1px;
+        }
+        
+    .cancelrequest_button {
+        width: 110px;
+        height: 20px;
+        background-color: #3b5998;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding-left: 1px;
+        margin-left: 5px;
+        }
+
+            .addfriend_sf {
+                width: 200px;
+                height: 20px;
+            background-color: #3b5998;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            }
+            
+             .cancelsentrequest_sf{
+                width: 200px;
+                height: 20px;
+            background-color: #3b5998;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            }
+            
+             .unfriend_sf {
+                width: 200px;
+                height: 20px;
+            background-color: #3b5998;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            }
+            
+             .this_is_your_best_friend_sf {
+                width: 200px;
+                height: 20px;
+            background-color: #3b5998;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            }
+            
+             .acceptrequest_sf {
+                width: 110px;
+                height: 20px;
+            background-color: #3b5998;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding-left: 1px;
+            }
+            
+             .cancelrequest_sf {
+                width: 110px;
+                height: 20px;
+            background-color: #3b5998;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding-left: 1px;
+            margin-left: 5px;
+            }
+        
+           
+    .show_more {
+        width: 100%;
+        height: 30px;
+        margin: 40px 0px;
+        cursor: pointer;
+        background-color: #0084b4;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: 901px) { 
+    .searchbar {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+       top: 10px;
+        position: fixed;
+    }
+
+    .starting_div {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 80px;
+    }
+    
+    .displaybox {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 80px;
+    }
+}    
+    @media screen and (min-width: 501px) and (max-width: 900px) {
+        .searchbar {
+            width: 75%;
+            margin-left: 15%;
+            margin-right: 15%;
+           top: 10px;
+            position: fixed;
+        }
+        
+        .starting_div {
+            width: 75%;
+            margin-left: 15%;
+            margin-right: 15%;
+            margin-top: 80px;
+        }
+        
+        .displaybox {
+            width: 75%;
+            margin-left: 15%;
+            margin-right: 15%;
+            margin-top: 80px;
+        } 
+    }
+
+    @media screen and (min-width: 301px) and (max-width: 500px) {
+        .searchbar {
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+           top: 10px;
+            position: fixed;
+        }
+        
+        .starting_div {
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 80px;
+        }
+        
+        .displaybox {
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 80px;
+        } 
+    }
+
+    @media screen and (max-width: 300px) {
+        .searchbar {
+            width: 92%;
+            margin-left: 4%;
+            margin-right: 4%;
+           top: 10px;
+            position: fixed;
+        }
+        
+        .starting_div {
+            width: 92%;
+            margin-left: 4%;
+            margin-right: 4%;
+            margin-top: 80px;
+        }
+        
+        .displaybox {
+            width: 92%;
+            margin-left: 4%;
+            margin-right: 4%;
+            margin-top: 80px;
+        } 
+    }
+
+    @media screen and (max-width: 250px) {
+        .addfriend{
+            width: 95%;
+        }
+        
+         .cancelsentrequest{
+            width: 95%;       
+        }
+        
+         .unfriend{
+            width: 95%;
+        }
+        
+         .this_is_your_best_friend{
+            width: 95%;
+        }
+        
+         .acceptrequest {
+            width: 95%;
+            margin-top: 5px;
+            margin-left: 0px;
+        }
+        
+         .cancelrequest {
+            width: 95%;
+            margin-top: 5px;
+            margin-left: 0px;
+        }
+        
+     .acceptrequest_button {
+        width: 95%;
+        margin-top: 5px;
+        margin-left: 0px;
+        }
+        
+    .cancelrequest_button {
+        width: 95%;
+        margin-top: 5px;
+        margin-left: 0px;
+        }
+
+            .addfriend_sf {
+                width: 95%;
+            }
+            
+             .cancelsentrequest_sf{
+                width: 95%;
+            }
+            
+             .unfriend_sf {
+                width: 95%;
+            }
+            
+             .this_is_your_best_friend_sf {
+                width: 95%;
+            }
+            
+             .acceptrequest_sf {
+                width: 95%;
+                margin-top: 5px;
+                margin-left: 0px;
+            }
+            
+             .cancelrequest_sf {
+                width: 95%;
+                margin-top: 5px;
+                margin-left: 0px;
+            }
+    }    
