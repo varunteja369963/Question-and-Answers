@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>ShareIdea - Sign Up Form</title>
+<meta charset = "UTF-8">
+<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+<meta name = "keywords" content = "making groups, asking doubts in group, learning, shareknowledge, chating">
+<meta name = "description" content = "Free web learning in groups and chatting">
+<meta name = "author" content = "M. Varun Teja(M.V.T)">
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script src = "registerform.js" type = "text/javascript"></script>
+<link rel = "stylesheet" type = "text/css" href = "registerform.css">
+</head>
+
+<body>
+    <div class = "registerform">
+<form action = "" method = "post" class = "form" id = "form">
+        <div class="container">
+    <h1 align = "center">SIGN UP</h1>
+<p id = "para">Please fill the form to Sign Up</p>
+<hr>
+<div class = "labels">
+<label for = "username"><b>Username:</b></label>
+<input type = "text" name = "username" id = "username" placeholder = "Enter Username" maxlength = "30" required/>
+<div id = "username_ack" class = "username_ack"></div>
+</div>
+
+<div class = "labels">
+<label for = "password1"><b>Password:</b></label>
+<input type = "password" name = "password1" id = "password1" placeholder = "Enter Password" maxlength = "30"/>
+<div id = "password1_ack" class = "password_ack"></div>
+</div>
+
+<div class = "labels">
+<label for = "password2"><b>Re-type Password:</b></label>
+<input type = "password" name = "password2" id = "password2" placeholder = "Re-type Password" maxlength = "30"/>
+<div id = "password2_ack" class = "password_ack"></div>
+</div>
+
+<div class = "labels">
+<label for = "gmail"><b>G-Mail Address:</b></label>
+<input type = "text" name = "gmail" id = "gmail" placeholder = "Enter G-Mail Address" required/>
+<div id = "gmail_ack" class = "gmail_ack"></div>
+</div>
+
+<hr class = "two"/>
+<p> By clicking Sign Me, you agree on our <a href = "#" style = "color: white">
+    terms and conditions
+</a> of our ShareIdea.
+</p>
+<div class = "clearfix">
+<button type = "submit" id = "register_the_details" class = "register" name = "register"> Sign Me </button>
+<button type = "reset" class = "reset"> Cancel </button>
+</div>
+        </div>
+</form>
+</div>
+<div class = "confirmation_outer">
+    <center>
+        <div class = "confirmation_inner">
+    <p>Confirmation link has been sent to your email. Please click the link to active your account before one hour.</p>
+    <p style = "font-size: 15px">Please check in your spam if you don't see in your inbox and mark it as 'not spam'.</p>
+        </div>
+    </center>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,248 @@
+<html>
+<head>
+<title>shareidea</title>
+<meta charset = "UTF-8">
+<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+<meta name = "keywords" content = "making groups, asking doubts in group, learning, shareknowledge, chating">
+<meta name = "description" content = "Free web learning in groups and chatting">
+<meta name = "author" content = "M. Varun Teja(M.V.T)">
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<link rel = "stylesheet" href = "askquestion.css" type = "text/css">
+<script type = "text/javascript" src = "shareidea.js"></script>
+<script type = "text/javascript" src = "askquestion.js"></script>
+<script src = "solvemyproblemquestions.js" type = "text/javascript"></script>
+
+<style>
+        @media screen and (max-width: 350px) {      
+     .selectionoption {
+            position: absolute;
+            width: 83%;
+            margin-left: 2%;
+            margin-right: 15%;
+            min-height: 900px;
+            height: 100%;
+            overflow: auto;
+            background-color: #333;
+            color: white;
+            z-index: 10;
+            top: 60px;            
+     }
+    }
+    
+        @media screen and (min-width: 350px) and (max-width: 450px) {      
+     .selectionoption {
+            position: absolute;
+                width: 73%;
+                margin-left: 2%;
+                margin-right: 25%;
+                min-height: 900px;
+                height: 100%;
+                overflow: auto;
+                background-color: #333;
+                color: white;
+                z-index: 10;
+                top: 60px;                
+     }
+    }
+    
+        @media screen and (min-width: 450px) and (max-width: 650px) {      
+     .selectionoption {
+            position: absolute;
+                width: 63%;
+                margin-left: 2%;
+                margin-right: 35%;
+                max-height: 900px;
+                height: 100%;
+                overflow: auto;
+                top: 60px;
+                background-color: #333;
+                color: white;
+                z-index: 10;
+     }
+    }
+     </style>
+</head>
+
+<body style = "position:relative;">
+        <div id = "total_page">
+                        <div id = "upper_option">
+                                        <button type = "button" id = "back_button">Back</button>
+                                        <button type = "button" id = "checkbox_for_tags" onclick = "tagsclicked();">TAGS</button> 
+                                        <button type = "button" id = "home_button">Home</button>  
+                                </div>
+                                <div id = "upper_option2" style = "display:none;">
+                                        <button type = "button" id = "back_button2" class = "back_button">
+                                     <center><div class="arrow-left icon"></div></center>
+                                        </button>
+                        <button type = "button" id = "checkbox_for_tags" onclick = "tagsclicked();">
+                                <div class="tag-solid icon"></div>
+                        </button> 
+                                </div>
+    <div id = "selection_option">
+        <div id = "space_for_left_side">
+
+<label id = "one" class="container">
+Big Data<input id = "two" type="checkbox">
+<span id = "three" class="checkmark"></span>
+</label>
+<label id = "one" class="container">
+Aritificial Intelligence<input id = "two" type="checkbox">
+<span id = "three" class="checkmark"></span>
+</label>
+<label id = "one" class="container">
+Programming Language<input id = "two" type="checkbox">
+<span id = "three" class="checkmark"></span>
+</label>   
+<label id = "one" class="container">
+Medical<input id = "two" type="checkbox">
+<span id = "three" class="checkmark"></span>
+</label>
+<label id = "one" class="container">
+Pharamacy<input id = "two" type="checkbox">
+<span id = "three" class="checkmark"></span>
+</label>
+<label id = "one" class="container">
+OTHERS<input id = "two" type="checkbox">
+<span id = "three" class="checkmark"></span>
+</label>   
+<label id = "one" class="container">
+                                
+        </div>
+</div>
+        <div id = "question_box" name = "question_box">  
+<form action = "" method = "post" id = "form">
+  <div class = "precise">
+<input type = "text" onkeyup = "specific(this.value)" name = "specificquestion" class = "precisequestion" placeholder = "Your question should be precise.." maxlength = "100" /> 
+<p id = "left"><span id = "count"> </span></p>
+</div> 
+
+<div id = "related_questions" class = "related_questions" onkeyup = "specific(this.value)"></div>
+
+<div id = "label">
+        <b>
+<label for ="box" id = "label_for_wysiwyg"> Explain about your idea:  </label>
+</b>     
+</div>                                        
+        <div id = "box" name = "box">
+            <div id = "menu">
+               <button type = "button" id = "Bold" title = "Bold"><b>B</b></button>
+               <button type = "button" id = "Italic" title = "Italic"><em>I</em></button>
+               <button type = "button" id = "Underline" title = "Underline"><u>abc</u></button>
+               <button type = "button" id = "Strike" title = "Strikethrough"><s>abc</s></button>
+               <button type = "button" id = "orderedList" title = "Numbered list">(i)</button>
+               <button type = "button" id = "unorderedList" title = "Bulleted list">&bull;</button>
+        <div class = "align">
+               <button type = "button" id = "alignleft" title = "Align Left">L</button>
+               <button type = "button" id = "aligncenter" title = "Align Center">C</button>
+               <button type = "button" id = "alignright" title = "Align Right">R</button>
+        </div>
+           <div class = "size">
+               <button type = "button" id = "auto" title = "AutoSize">auto-size</button>               
+               <button type = "button" id = "h1" title = "FontSize">h1</button> 
+               <button type = "button" id = "h3" title = "FontSize">h3</button> 
+               <button type = "button" id = "h6" title = "FontSize">h6</button>
+        </div> 
+               <input type = "color" id = "textcolor" title = "TextColor">
+               <input type = "color" id = "backcolor" title = "BackGroundColor">           
+               <button type = "button" id = "Link" title = "Link">&#x27BF;</button> 
+               <button type = "button" id = "Unlink" title = "Unlink">Unlink</button>
+               <button type = "button" id = "sup" title = "SuperScript">X<sup>2</sup></button>
+               <button type = "button" id = "sub" title = "SubScript">X<sub>2</sub></button> 
+               <button type = "button" id = "video" class = "video" title = "include video">video</button>
+               <div class = "file_button">
+                       Image
+               <input type = "file" id = "file" class = "file" title = "include file" value = "file"/>
+        </div>       
+</div>
+           
+            <div id = "richtextarea" name = "richtextarea">
+                <iframe id = "wysiwyg" name = "wysiwyg" frameborder = "0">
+                </iframe>
+        </div>
+    </div>
+
+<div id = "label_for_selecting_checkbox"> 
+        <b> 
+<label for = "tags_display" id = "id_for_tag_label"> Select the tags related to the question from the left side of the page:</label>
+</b>
+</div>
+<div id = "display_tags">
+<p id = "one_tag" class = "tags_decorate"></p>
+</div>
+
+<div class = "years_taken_div">
+                <label for = "years_taken_inner"><b>How long it will take to complete your project.</b></label>
+                <div class = "years_taken_inner">
+                        <select class = "years_taken">
+                                <option value = "below1month">below 1 month</option>
+                                <option value = "below3month"> 3 month</option>
+                                <option value = "below6month"> 6 month</option>
+                                <option value = "1year"> 1 year</option>
+                                <option value = "2year"> 2 year</option>
+                                <option value = "3year"> 3 year</option>
+                                <option value = "4year"> 4 year</option>
+                                <option value = "5year"> 5 year</option>
+                                <option value = "6year"> 6 year</option>
+                                <option value = "7year"> 7 year</option>
+                                <option value = "8year"> 8 year</option>
+                                <option value = "9year"> 9 year</option>
+                                <option value = "10year"> 10 year</option>
+                                <option value = "above10year"> above 10 year</option>             
+                        </select>
+                </div>
+        </div>
+
+        <div class = "how_many_members">
+                <label for = "how_many_members_div"><b>Members participating in this project.</b></label>
+                <div class = "how_many_members_div">
+                        <select class = "how_many">
+                                <option value = "1member">1</option>
+                                <option value = "2member">2</option>
+                                <option value = "3member">3</option>
+                                <option value = "4member">4</option>
+                                <option value = "5member">5</option>
+                                <option value = "6member">6</option>
+                                <option value = "7member">7</option>
+                                <option value = "8member">8</option>
+                                <option value = "9member">9</option>
+                                <option value = "10member">10</option>
+                                <option value = "above10member">above 10</option>
+                        </select>
+                </div>
+        </div>
+
+        <div class = "requirements_border">
+                <label for = "requirements_div"><b>What are your requriements you need for this project.</b></label>
+                <p class = "incase" style = "font-size: 13px;">If your idea is related to other than computer science. Please click other.</p>
+                <div class = "requirements_div">
+                        <select class = "requirements">
+                        <option value = "Developer">Developer</option>
+                        <option value = "Investor">Investor</option>
+                        <option value = "ethical_hacker">ethical_hacker</option>
+                        <option value = "other">Other</option>
+                </select>
+                </div>
+        </div>
+
+        <div class = "investement_border">
+<label for = "investement_div"><b>Investement required for this project</b></label>
+ <div class = "investement_div">
+         <select class = "investement">
+                 <option value = "below1lakh">Below 1 lakh</option>
+                 <option value = "1to10lakh">1-10lakhs</option>
+                 <option value = "10to20lakh">10-20lakhs</option>
+                 <option value = "20to30lakh">20-30lakhs</option>
+                 <option value = "30to40lakh">30-40lakhs</option>
+                 <option value = "40to50lakh">40-50lakhs</option>
+                 <option value = "50andabove">50lakhs and above</option>           
+         </select>
+ </div>
+        </div>
+<div id = "submit_button>">  
+<button type = "submit" value = "askquestion" id = "ask_question_submit_button" name = "askquestion">Post Idea</button>
+</div>
+</form>
+</div>
+</body>
+</html>
