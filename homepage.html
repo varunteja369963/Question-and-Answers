@@ -1,0 +1,187 @@
+ <html>
+    <head>
+    <title>
+        ShareIdea-HomePage
+    </title>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <meta name = "keywords" content = "making groups, asking doubts in group, learning, shareknowledge, chating">
+    <meta name = "description" content = "Free web learning in groups and chatting">
+    <meta name = "author" content = "M. Varun Teja(M.V.T)">
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script src = "homepage.js" type = "text/javascript"></script>
+    <link rel = "stylesheet" type = "text/css" href = "homepage.css">
+
+<style>
+    .addingclass {
+        height: 75%;
+        position: fixed;
+        top: 46px;
+        z-index: 2;
+        border:1px solid black;
+        background-color: white;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    @media screen and (min-width: 321px) {
+        .addingclass {
+        width: calc(90% + 5px);
+        width: -webkit-calc(90% + 5px);
+        width: -moz-calc(90% + 5px);
+        margin-left: calc(5% - 5px);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .addingclass {
+        width: 93%;
+        margin-left: 2%;
+        margin-right: 5%;
+    }
+} 
+
+   .addingclass2 {
+        position: fixed;
+        display: block;
+        z-index: 3;
+        border:1px solid black;
+        background-color: white;
+        overflow-x: auto;
+        overflow-y: auto;
+        bottom: 55px;
+        margin-left: 5%;
+    }
+
+    @media screen and (min-width: 450px) {
+        .addingclass2 {
+            width: 425px;
+            height: 90px;
+        }
+    }
+    
+    @media screen and (min-width: 331px) and (max-width: 450px) {
+    .addingclass2 {
+        width: 95%;
+        margin-left: 4%;
+        margin-right: 1%;
+    }
+} 
+
+    @media screen and (min-width: 226px) and (max-width: 330px) {
+    .addingclass2 {
+        width: calc(225px - 4%);
+        width: -webkit-calc(250px - 4%);
+        width: -moz-calc(250px - 4%);
+        margin-left: 4%;
+    }
+} 
+
+@media screen and (max-width: 225px) {
+    .addingclass2 {
+        width: 95%;
+        margin-left: 4%;
+        margin-right: 1%;
+    }
+}
+
+</style>
+
+</head>
+
+    <body class = "body" >
+        <div class = "total_page">
+    <div class = "search_friend"> 
+        <div id = "search_friend_textbox" class = "search_friend_textbox">
+    <input type = "text" id = "textbox" class = "box" name = "search" autocomplete = "off"
+     onkeyup = "ajaxFunction(this.value)" placeholder = "Search your friends...." />
+    </div>
+    <div id = "search_friend_button" class = "search_friend_button">
+    <button type = "button"  id = "close" class = "close">close</button>
+</div>
+</div>
+    
+<div class = "displaybox" id = "displaybox" name = "displaybox"></div>
+    <div class = "main" id = "main">
+                    <button type = "button" class = "messaging" id = "shell" title = "message">
+                            <div class = "pending_messages" style = "display:none"></div>
+                            <div class = "message_line"></div>
+                        </button>
+                    <div class = "web_icon">S</div>
+       </div>
+
+ <div class = "menubox" id = "menubox">
+    <div class = "icon1"> 
+        <button type = "button" class = "register" id = "register1" title = "solve my problem">
+                <div class = "question">?</div>
+                <div class = "problem">problem</div>
+       </button> 
+       </div>
+
+    <div class = "icon2">
+       <button type = "button" id = "menu2" class = "menu" title = "groups">
+            <div class = "groups2"></div>
+            <div class = "groups3"></div>
+            <div class = "groups4"></div>
+            <div class = "groups5"></div>
+    </button>
+</div>
+
+<div class = "icon3">
+    <button type = "button" class = "login" id = "login2" title = "shareidea">
+            <div class = "shareidea1"></div>
+            <div class = "shareidea2"></div>
+    </button> 
+</div>
+
+<div class = "icon4">
+    <button type = "button" class = "messaging" id = "messaging2" title = "message">
+        <div class = "pending_messages"></div>
+        <div class = "message_line"></div>
+    </button>
+</div>
+
+<div class = "icon5">
+    <button type = "button" class = "profile_icon_button" id = "myprofile" title = "my profile">
+<div class = "profile_icon"></div>
+    </button>
+</div>
+
+<div class = "icon7">
+<button type = "button" id = "request_got" class = "request_got" title = "find friends">
+    <div id = "request_got_text"></div>
+    <div class = "find_friends"></div>
+    <div class = "find_friends2"></div>
+</button>
+ </div>
+
+ <div class = "icon6">
+    <button type = "button" class = "logout icon" id = "logout" title = "logout"></button>
+    </div>
+
+<div class = "space"></div>
+</div>
+       <div class = "bottom_toolbar">
+          <div class = "icon1"> 
+            <button type = "button" class = "register" title = "solve my problem">
+                <div class = "question">?</div>
+                <div class = "problem">problem</div>
+            </button> 
+           </div>
+        <div class = "icon2">
+           <button type = "button" id = "menu" class = "menu" title = "menu">
+            <div class = "dot1"></div>
+            <div class = "dot2"></div>
+            <div class = "dot3"></div>
+        </button>
+    </div>
+    <div class = "icon3">
+        <button type = "button" class = "login" title = "shareidea">
+            <div class = "shareidea1"></div>
+            <div class = "shareidea2"></div>
+        </button> 
+    </div>
+       </div>
+    </div>
+    </body>
+</html>

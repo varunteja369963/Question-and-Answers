@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sabiduria - Sign In</title>
+<meta charset = "UTF-8"/>
+<meta name = "viewport" content = "width=device-width, initial-scale = 1.0"/>
+<meta name = "keywords" content = "groups, qestion and answer, shareideas, learning, shareknowledge, chating "/>
+<meta name = "description" content = "Free web learning"/>
+<meta name = "author" content = "M.Varun Teja(M.V.T)"/>
+<script src = "http://localhost/dashboard/sabiduria/jquery.min.js"></script>
+<!--<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+<script type = "text/javascript" src = "loginform.js"></script>
+<link rel = "stylesheet" type = "text/css" href = "loginform.css"/>
+</head>
+
+<body>
+
+    <div id = "loginform" class = "loginform"> 
+<form class = "formborder" action = "" method = "post" id = "form" name = "form">
+    <div class = "container">
+<h1 style = "text-align: center">SIGN IN</h1>
+<p id = "para">Please fill the form to Log In</p>
+<hr/>
+<div id = "username_div"> 
+    <label for = "username"><b>Username:</b></label>
+<input type = "text" name = "username" id = "username" placeholder = "username" maxlength = "30" required/>
+<div id = "username-ack"></div>
+</div>
+
+<div id = "password_div">
+   <label for = "password1"><b>Password:</b></label>
+<input type = "password" name = "password" id = "password" placeholder = "password" maxlength = "30" required/>
+<div id = "password-ack"></div>
+</div>
+
+<hr class = "two"/>
+<button class = "login" type = "submit" name = "login" id = "login">Login</button>
+<button type = "button" id = "register">Create New Account</button>
+</div>
+<a href = "forgotmypassword.html" class = "forgot_password">forgot password?</a>
+</form>
+</div>
+<div class = "loading_bar">
+        <div class = "loader" style = "display: none"></div>
+    </div>
+</body>
+</html>

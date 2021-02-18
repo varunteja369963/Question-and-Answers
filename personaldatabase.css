@@ -1,0 +1,513 @@
+.group_created_time {
+    text-align: center;
+    color: #646666;
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.user_profile_info {
+ width: 30%;
+}
+
+.user_info {
+ width: 35%;
+}
+
+.user_profile_info2 {
+    width: 50%;
+   }
+
+   .user_infos2 {
+    width: 50%;
+   }
+   
+.my_info {
+    margin-top: 5%;
+    width: 100%;
+}
+
+.my_info2 {
+    margin-top: 20%;
+    width: 100%;
+}
+
+.group_name_edit {
+  width: 92%;
+margin-right: 8%;    
+    display: flex;
+    margin-top: 15px;
+}
+
+.this_groupname {
+width: calc(100% - 50px);
+width: -webkit-calc(100% - 50px);
+width: -moz-calc(100% - 50px);
+color: #646666;
+    font-size: 18px;
+    word-wrap: break-word;
+    white-space: normal;
+    font-style: italic;
+    border: 1px solid #646666;
+}
+
+.groupname_edit_div {
+    width: 50px;
+}
+
+.edit_grpname {
+    border: none;
+    background-color: #dee3df;
+    color: #000000;
+    height: 28px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+#groupname_ack {
+  color: red;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.my_name {
+    width: 85%;
+  font-size: 30px;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.gmail {
+    width: 85%;
+    font-size: 12px;
+    margin-left: 1px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.quote {
+    width: 90%;
+    margin-top: 30px;
+    color: #646666;
+    font-size: 15px;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-y: auto;
+    min-height: 28px;
+    max-height: 100px;
+    font-style: italic;
+}
+
+.points {
+  margin-top: 35px;
+}
+
+.points_inner {
+    width: 150px;
+    height: 45px;
+  border: 1px solid #000000;
+  display: flex;
+}
+
+.points_in_this_group {
+    width: 75px;
+    height: 45px;
+    border-right: 1px solid #000000;
+    text-align: right;
+    padding-top: 13px;
+    padding-right: 8px;
+}
+
+.total_points {
+    width: 75px;
+    height: 45px;
+    text-align: right;
+    padding-top: 13px;  
+    padding-right: 8px;
+    
+}
+
+.users_in_website {
+  width: 35%;
+  height: 100%;
+  overflow: auto;
+  margin-top: 0px;
+}
+
+.ads_in_website {
+    width: 35%;
+    height: 100%;
+    overflow: auto;
+  }
+
+.users_list {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.user_info2 {
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+}
+
+.no_of_participants {
+    font-weight: 600;
+    margin-bottom: 25px; 
+    color: #9b9999; 
+}
+
+.user_profile_pic {
+width: 40px;
+}
+
+.inner_profile_pic {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000000;
+}
+
+.friend_info {
+    width: calc(100% - 40px);
+    width: -moz-calc(100% - 30px);
+    width: -webkit-calc(100% - 30px);    
+    text-overflow: ellipsis;
+}
+
+.inner_friend_info {
+    margin-left: 10px;
+}
+
+.fri_name {
+    cursor: pointer;
+    font-size: 18px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.gmail2 {
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.user_response {
+    width: 100%;
+    margin-bottom: 70px;
+    top: 400px; 
+}
+
+ .personal_data_page {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.questions_display {
+    width: 49%;
+}
+
+.your_questions {
+    text-align: center;
+    color: #9b9999;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.questions_list {
+  margin-left: 15px;
+  max-height: 500px;
+  overflow: auto;  
+}
+
+.question_info {
+display: flex;
+width: 100%;
+}
+
+.question_points {
+ width: 45px;
+ height: 25px;
+ border: none;
+ background-color: #0084b4;
+ color: #fff;
+ border-radius: 10px 0px 10px 10px;
+ text-align: center;
+ padding-top: 4px;
+ padding-bottom: 4px;
+ font-size: 12px;
+}
+
+.asked_questions {
+    width: calc(100% - 45px);
+    width: -moz-calc(100% - 45px);
+    width: -webkit-calc(100% - 45px);    
+  word-wrap: break-word;
+  white-space: normal;
+  margin-bottom: 25px;
+  padding-left: 15px;
+}
+
+#question_link {
+    color: #E95420;
+    text-decoration: none;
+}
+
+.answers_display {
+    width: 51%;
+    margin-top: 0px;
+}
+
+.your_answers {
+    text-align: center;
+    color: #9b9999;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.answers_list {
+    margin-left: 15px;
+    margin-right: 10px;
+    max-height: 500px;
+    overflow: auto;
+}
+  
+  .answer_info {
+    width: 100%;
+  }
+  
+  .asked_answers {
+      width: 98%;   
+    word-wrap: break-word;
+    white-space: normal;
+    margin-bottom: 25px;
+    padding-left: 25px;
+  }
+  
+  #answer_link {
+      color: #E95420;
+      text-decoration: none;
+  }
+  
+@media screen and (min-width: 751px) {
+    .group_created_time {
+        font-size: 35px;
+    }
+
+    .top_page {
+        width: 100%;
+        height: 400px;
+        max-height: 400px;
+    margin-top: 30px;        
+        display: flex;
+      }
+
+      .profile_pic {
+        width: 200px;
+        height: 200px;
+        margin-top: 20%;
+        border: 1px solid #000000;
+      } 
+      
+      .profile_pic2 {
+        width: 200px;
+        height: 200px;
+        margin-top: 20%;
+        border: 1px solid #000000;
+      }  
+}
+
+@media screen and (min-width: 651px) and (max-width: 750px)  {
+    .group_created_time {
+        font-size: 30px;   
+    }
+
+    .top_page {
+        width: 100%;
+        height: 400px;
+        max-height: 400px;
+    margin-top: 30px;                
+        display: flex;
+      } 
+
+      .profile_pic {
+        width: 150px;
+        height: 150px;
+        margin-top: 20%;
+        border: 1px solid #000000;
+      } 
+
+      .profile_pic2 {
+        width: 200px;
+        height: 200px;
+        margin-top: 20%;
+        border: 1px solid #000000;
+      }  
+
+     
+}
+
+@media screen and (max-width: 650px) {
+    .group_created_time {
+        font-size: 20px;
+    }
+
+    .top_page {
+        width: 100%;
+    margin-top: 30px;                
+      } 
+
+      .profile_pic2 {
+        width: 200px;
+        height: 200px;
+        margin-top: 20%;
+        border: 1px solid #000000;
+      }  
+
+      .profile_pic {
+        width: 200px;
+        height: 200px;
+        margin-top: 2%;
+        border: 1px solid #000000;
+      }
+
+      .user_profile_info2 {
+          width: 100%;
+       }
+       
+       .user_infos2 {
+       width: 90%;
+       margin-left: 5%;
+       margin-right: 5%;       
+       }
+       
+       .user_profile_info {
+        width: 100%;
+     }
+     
+     .user_info {
+     width: 90%;
+     margin-left: 5%;
+     margin-right: 5%;       
+     }
+
+       .group_name_edit {
+        width: 100%;
+        margin-right: 0px;
+          margin-top: 30px;
+      }
+
+       .users_in_website {
+           width: 100%;
+        max-height: 300px;
+        margin-top: 50px;
+      }
+
+      .personal_data_page {
+          display: block;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .questions_display {
+        width: 98%;
+    }
+
+    .answers_display {
+        width: 98%;
+        margin-top: 30px;
+    }
+
+    .question_points {
+        width: 35px;
+    }
+}
+
+@media screen and (min-width: 1101px)  and (max-width: 1200px) {
+    .user_response {
+        top: 350px; 
+    }
+}
+
+@media screen and (min-width: 650px)  and (max-width: 1100px) {
+    .user_response {
+        top: 300px; 
+    }
+}
+
+.badge {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 0px;
+    width: 15px;
+    height: 20px;
+    background-color: #0084b4;
+    border-radius: 1px 1px 0 0;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+  }
+  
+  .badge:before {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    top: 12px;
+    left: 1px;
+    width: 9px;
+    height: 9px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  
+  .points1 {
+   margin-left: 45px;
+  }
+
+  .points2 {
+    margin-left: 10px;
+   }
+
+  .heart {
+    background-color: red;
+    display: inline-block;
+    width: 14px;    
+    height: 13px;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 10px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  
+  .heart:before,
+  .heart:after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    width: 14px;    
+    height: 13px;
+    position: absolute;
+  }
+  
+  .heart:before {
+    top: -8px;
+    left: 0;
+  }
+  
+  .heart:after {
+    left: 7px;
+    top: 0px;
+  }
+  
+  

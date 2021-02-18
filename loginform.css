@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+* {
+    box-sizing: border-box;
+} 
+  
+html, body {
+    background: linear-gradient(45deg, #ff4c00, #ff8c00,#ffb700, #E95420) no-repeat;
+    background: -webkit-linear-gradient(45deg, #ff4c00, #ff8c00,#ffb700, #E95420) no-repeat;    
+    background: -moz-linear-gradient(45deg, #ff4c00, #ff8c00,#ffb700, #E95420) no-repeat;
+    background: -o-linear-gradient(45deg, #ff4c00, #ff8c00,#ffb700, #E95420) no-repeat;
+    min-height: 100%;
+   margin: 0px;
+   overflow: auto;   
+}
+
+    .formborder {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%; 
+    }
+
+input[type = text], input[type = password] {
+    width: 100%;
+    padding: 15px;
+    display: inline-block;
+    border: none;
+    background-color: white;
+    margin-top: 5px;
+}
+
+#username-ack {
+    color: white;
+    margin-top: 7px;
+    font-size: 15px;
+}
+
+#password-ack {
+    color: white;
+    margin-top: 7px;
+    font-size: 15px;
+}
+
+hr {
+    border: 0.5px solid #070807;
+    margin: 5px 0 0 0;
+}
+hr.two {
+    border: 0.5px solid #070807;
+    margin: 20px 0 0 0;
+}
+
+#username_div {
+   margin-top: 20px;
+}
+
+#password_div {
+  margin-top: 20px;
+}
+.login {
+    width : 100%;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    cursor: pointer;
+    margin: 20px 0 10px 0;
+    opacity: 0.5; 
+    border: none;
+}
+
+#register {
+    width : 100%;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    cursor: pointer;
+    margin: 10px 0 10px 0;
+    opacity: 0.5; 
+    border: none;
+}
+
+#register:hover{
+    opacity: 0.7;  
+}
+
+#para {
+    margin-bottom: 1px;
+}
+
+
+.login:hover {
+    opacity: 0.7;
+
+}
+
+.forgot_password {
+  float: right;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1001px) {
+    .loginform {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 5%;
+        margin-bottom: 50px;
+      }
+}
+
+@media screen and (min-width: 751px) and (max-width: 1000px) {
+  .loginform {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 5%;
+        margin-bottom: 50px;        
+      }
+}
+
+@media screen and (min-width: 401px) and (max-width: 750px) {
+    .loginform {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 5%;        
+        margin-bottom: 50px;
+      }
+}
+
+@media screen and (max-width: 400px) {
+    .loginform {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+        margin-bottom: 50px;        
+      }
+}
+    
+.loading_bar {
+    top: 0px;
+    left: 0px;
+      right: 0px;
+      bottom: 0px;
+     
+      
+  }
+  
+  .loader {
+      border: none; 
+      border-top: 12px solid #0084b4;
+      border-radius: 50%;
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: calc(50% - 60px);
+      top: -webkit-calc(50% - 40px);
+      top: -moz-calc(50% - 40px);
+      left: calc(50% - 40px);
+      z-index: 10;
+      animation: spin 1s linear infinite;
+  }
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

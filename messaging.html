@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            message
+        </title>
+        <meta charset = "UTF-8">
+<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+<meta name = "keywords" content = "making groups, asking doubts in group, learning, shareknowledge, chating">
+<meta name = "description" content = "Free web learning in groups and chatting">
+<meta name = "author" content = "M. Varun Teja(M.V.T)">
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script type = "text/javascript" src = "messaging.js"></script>
+<link type = "text/css" rel = "stylesheet" href = "messaging.css">
+    </head>
+    
+    <body>
+<div class = "main_frame" id = "main_frame">
+        <form action = "" method = "post">
+    <div class = "search_friend" id = "search_friend">    
+    <div class = "search_friend_div"> 
+        <input type = "text" onkeyup = "searching(this.value);" placeholder = "search your friend...." 
+        id = "search_friend_box" class = "search_friend_box"/>
+    </div>
+    </div>    
+         </form>  
+<div id = "users_for_chat_outerbox" class = "users_for_chat_outerbox"></div>
+</div>
+<div id = "message_display" class = "message_display" style = "display: none;"></div>
+    </body>
+</html>

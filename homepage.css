@@ -1,0 +1,913 @@
+
+body {
+    font-family: Courier New, serif, Arial, Helvetica, sans-serif; 
+}
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background: radial-gradient(circle, #C8A9BA, #9F6986, #772953, #000000 115%);
+    background: -moz-radial-gradient(circle, #C8A9BA, #9F6986, #772953, #000000 115%);
+    background: -webkit-radial-gradient(circle, #C8A9BA, #9F6986, #772953, #000000 115%);
+    background: -o-radial-gradient(circle, #C8A9BA, #9F6986, #772953, #000000 115%);
+    min-height: 100%;
+   margin: 0px;
+   overflow: hidden;
+}
+
+    .search_friend {
+        display: flex;
+        width: 95%;
+        margin-right: 5%;
+        height: 46px;
+        position: fixed;
+    }
+
+    .search_friend_textbox {
+       width: calc(100% - 60px);
+       width: -webkit-calc(100% - 60px);
+       width: -moz-calc(100% - 60px);
+       width: -o-calc(100% - 60px);       
+    }
+
+    .search_friend_button {
+     width: 60px;
+    }
+
+    .box {
+        padding: 3px 10px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+        font-size: 15px;
+        width: 95%;
+        margin-right: 0px; 
+        margin-top: 10px;
+        height: 36px;
+        border-radius: 0px;
+    }
+
+    .close {
+        width: 60px;
+        height: 36px;
+        margin: 10px 0px 0px 0px;
+        padding: 0px;
+        font-weight: 600px;
+        text-align: center;
+        color: #fff;
+        background: 0 0;
+        cursor: pointer;
+        font-size: 1.3em;
+        border: 2px solid #fff;
+    }
+
+.bottom_toolbar {
+    width: 92%;
+    height: auto;
+    margin-left: 4%;
+    margin-right: 4%;
+    position: fixed;
+    bottom:0;
+    list-style-type: none;
+    background-color: #333;
+}
+
+.icon1 {
+ float: left;
+ margin: 5px;
+}
+
+.icon2 {
+ float: left;
+ margin: 5px;
+}
+
+.icon3 {
+  float: left;
+ margin: 5px;
+}
+
+.icon4 {
+    float: left;
+ margin: 5px;
+}
+
+.icon5 {
+    float: left;
+ margin: 5px;
+}
+
+.icon6 {
+    float: left;
+ margin: 5px;
+}
+
+.icon7 {
+    float: left;
+ margin: 5px;
+}
+
+.register {
+    position: relative;
+    margin: 0px 7px 0px 15px;
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    background-color: #328332;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.question {
+    position: absolute;
+       font-size: 26px;
+       text-shadow: 1px 0px #fff;
+       top: 0px;
+       font-weight: 600;
+       font-style: bold;
+       margin-left: 8px;
+       -webkit-touch-callout: none; /* iOS Safari */
+       -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+          -moz-user-select: none; /* Firefox */
+           -ms-user-select: none; /* Internet Explorer/Edge */
+               user-select: none;
+
+               -moz-animation-duration: 400ms;
+  -moz-animation-name: blink;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  
+  -webkit-animation-duration: 400ms;
+  -webkit-animation-name: blink;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  
+  animation-duration: 400ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+   }
+   
+@-moz-keyframes blink {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes blink {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes blink {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+
+   .problem {
+       position: absolute;;
+       bottom: 4px;
+       font-size: 10px;
+       left: 1px;
+       font-weight: 600;
+       letter-spacing: 0.5px;
+       -webkit-touch-callout: none; /* iOS Safari */
+       -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+          -moz-user-select: none; /* Firefox */
+           -ms-user-select: none; /* Internet Explorer/Edge */
+               user-select: none;
+   }
+
+#register1 {
+ margin-left: 5px;
+ margin-top: 10px;
+}
+
+ .menu {
+     position: relative;
+   /* margin: 5px 5px 5px 5px;*/
+    width: 45px;
+    height: 45px;
+    background-color: white;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;  
+    border: 1px solid #000000;  
+}
+
+.dot1 {
+background-color: #000000;
+position: absolute;
+width: 7px;
+height: 7px;
+border: none;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+border-radius: 50%;
+left: 11px;
+top: 8px;
+}
+
+.dot1::after {
+  content: '';
+  position: absolute;
+  background-color: #000000;
+width: 7px;
+height: 7px;
+border: none;
+left: 14px;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+border-radius: 50%;
+}
+
+.dot2 {
+    background-color: #000000;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border: none;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    left: 11px;
+    top: 18px;
+    }
+    
+    .dot2::after {
+      content: '';
+      position: absolute;
+      background-color: #000000;
+    width: 7px;
+    height: 7px;
+    border: none;
+    left: 14px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    }
+   
+.dot3 {
+    background-color: #000000;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border: none;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    left: 11px;
+    top: 28px;
+    }
+    
+    .dot3::after {
+      content: '';
+      position: absolute;
+      background-color: #000000;
+    width: 7px;
+    height: 7px;
+    border: none;
+    left: 14px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    } 
+
+#menu2 {
+  margin-top: 10px;
+}
+
+  .groups2 {
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    border-radius: 50%;
+    left: 17px;
+    top: 5px;
+    position: absolute;
+  }
+
+  .groups2::after {
+    content: '';
+    left: -1px;
+    top: 6px;
+    width: 11px;
+    height: 3px;
+    margin-top: 2px;
+    position: absolute;
+    background-color: #000000;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .groups3 {
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    border-radius: 50%;
+    left: 4px;
+    top: 12px;
+    position: absolute;
+  }
+
+  .groups3::after {
+    content: '';
+    left: -1px;
+    top: 8px;
+    width: 11px;
+    height: 8px;
+    margin-top: 2px;
+    position: absolute;
+    background-color: #000000;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .groups4 {
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    border-radius: 50%;
+    left: 17px;
+    top: 18px;
+    position: absolute;
+  }
+
+  .groups4::after {
+    content: '';
+    left: -1px;
+    top: 8px;
+    width: 11px;
+    height: 8px;
+    margin-top: 2px;
+    position: absolute;
+    background-color: #000000;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .groups5 {
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    border-radius: 50%;
+    left: 30px;
+    top: 12px;
+    position: absolute;
+  }
+
+  .groups5::after {
+    content: '';
+    top: 8px;
+    left: -1px;
+    width: 11px;
+    margin-top: 2px;
+    height: 8px;
+    position: absolute;
+    background-color: #000000;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+ 
+    .menu:hover {
+        transform: rotate(90deg);
+transition: 1s;
+    }
+ 
+    .login {
+        /*margin: 5px 5px 5px 5px;*/
+        background-color: 	#FFFF00;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        cursor: pointer;        
+        border: 1px solid #000000;
+        position: relative;
+    }
+
+    
+  .shareidea1 {
+    border: 1px solid #000000;
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    top: 16px;
+    left: 15px;
+    background-color: #000000;
+      }
+    
+    .shareidea1::after {
+      content: '';
+      top: 10px;
+      left: -3px;
+      border: 2px solid #000000;
+      background-color: #000000;
+      border-bottom: none;
+      border-radius: 5px 5px 0px 0px;
+      position: absolute;
+      width: 8px;
+      height: 8px;
+    }
+      
+    .shareidea2 {
+      border: 2px solid #000000;
+      background-color: #000000;
+      border-radius: 50%;
+      position: absolute;
+      left: 25px;
+      top: 12px;
+    }
+    .shareidea2::before {
+      content: '';
+      border: 4px solid #000000;
+      background-color: #000000;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 2px; 
+    }
+
+    #login2 {
+       margin-top: 10px;
+       margin-left: 5px;
+    }
+
+    #shell {
+        z-index: 1;
+        color: #fff;
+        background-color: black;
+        border: 3px solid white;
+        width: 45px;
+        height: 35px;
+        float: left;
+        cursor: pointer; 
+        position: fixed;
+        margin-top: 20px;
+        margin-left: 10px;
+        border-radius: 10px 10px 5px 5px;
+    }
+
+    .message_line {
+        margin-top: -7px;
+        left: -4px;
+      position: absolute;
+      width: 28px;
+      border: 2px solid #fff;
+      -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+        
+    }
+
+    .message_line::after {
+        content: '';
+        margin-top: -15px;
+        left: 12px;
+        position: absolute;
+        width: 25px;
+        border: 2px solid #fff;
+        -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(90deg)
+      }
+
+     #shell:hover {
+transform: rotate(80deg);
+transition: 1s;
+    }
+ 
+    #messaging2 {
+        float: left;
+        cursor: pointer; 
+        position: relative;
+       top: 15px;
+       margin-left: 5px;
+        z-index: 1;
+        color: #fff;
+        background-color: black;
+        border: 3px solid white;
+        width: 45px;
+        height: 35px;
+        float: left;
+        cursor: pointer; 
+        border-radius: 10px 10px 5px 5px;
+    }
+
+    .pending_messages { 
+        color: #fff;
+        position: absolute;
+        background-color: #cc0000;
+        top: -10px;
+        margin-left: 18px;
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        text-align: center;
+        overflow: hidden;
+        padding-top: 2px;
+        z-index: 2;
+
+        
+        -moz-animation-duration: 1000ms;
+        -moz-animation-name: blink;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-direction: alternate;
+        
+        -webkit-animation-duration: 1000ms;
+        -webkit-animation-name: blink;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        
+        animation-duration: 1000ms;
+        animation-name: blink;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+         }
+         
+      @-moz-keyframes blink {
+          from {
+            opacity: 1;
+          }
+          
+          to {
+            opacity: 0;
+          }
+        }
+        
+        @-webkit-keyframes blink {
+          from {
+            opacity: 1;
+          }
+          
+          to {
+            opacity: 0;
+          }
+        }
+        
+        @keyframes blink {
+          from {
+            opacity: 1;
+          }
+          
+          to {
+            opacity: 0;
+          }
+        }
+    
+@media screen and (min-height: 401px) {
+    .body .main #shell {
+        margin:30px 0px 0px 40px;
+        top: 96px;
+        }
+}
+
+@media screen and (min-height: 301px) and (max-height: 400px) {
+    .body .main #shell {
+    margin:0px 0px 0px 40px;
+    top: 96px;    
+    }
+}
+  
+@media screen and (max-height: 300px) {
+    .body .main #shell {
+    margin:0px 0px 0px 10px;
+    top: 56px;    
+    }
+}
+
+    .messaging:hover {
+        transform: rotate(80deg);
+        transition: 1s;
+    }
+
+    .body .main .web_icon{
+        position: absolute;
+        float: left;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-style: serif;
+        color: white;
+        font-size: 250px;
+        font-weight: 700;
+        opacity: 0.5; 
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+         -khtml-user-select: none; /* Konqueror HTML */
+           -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none;
+        }
+
+    .body .main .web_icon:hover {
+        opacity: 0.7;
+    }
+
+    #menubox {
+        display: none;
+    }
+
+      .profile_icon_button {
+        margin-top: 10px;
+        margin-left: 7px;
+        position: relative;
+        float: left;
+          border: none;
+        cursor: pointer;
+          width: 45px;
+          height: 45px;
+        border-radius: 10px;
+      }
+      
+      .profile_icon {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        top: 6px;
+      left: 12px;
+        border: none;
+        background-color: #000000;
+       
+      }
+      .profile_icon::after {
+          content: '';
+        color: #000;
+        position: absolute;
+        width: 20px;
+        height: 15px;
+        border: 1px solid currentColor;
+        border-bottom: none;
+        border-radius: 6px 6px 0 0;
+        top: 15px;
+        left: -3px;
+        cursor: pointer;
+      }      
+
+.profile_icon:hover {
+    background-color: #000000;
+}      
+
+      .logout.icon { 
+        margin-top: 15px;
+        margin-left: 10px;
+        position: relative;
+        float: left;
+        color: #000;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: solid 4px currentColor;
+        background-color: #fff;
+        cursor: pointer;
+      }
+
+      .logout.icon:before {
+        content: '';
+        position: absolute;
+        left: 7px;
+        top: -5px;
+        width: 4px;
+        height: 20px;
+        border-left: solid 4px white;
+        border-right: solid 4px white;
+        background-color: currentColor;
+      }
+
+      .logout.icon:hover {
+        transform: rotate(180deg);
+        transition: 1s;    
+      }
+
+.request_got {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #0084b4;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.find_friends {
+    border: 1px solid #fff;
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 10px;
+    left: 10px;
+      }
+    
+    .find_friends::after {
+      content: '';
+      top: 10px;
+      left: -3px;
+      border: 2px solid #fff;
+      border-bottom: none;
+      border-radius: 5px 5px 0px 0px;
+      position: absolute;
+      width: 9px;
+      height: 8px;
+    }
+    
+    .find_friends2 {
+      border: 1px solid #fff;
+      position: absolute;
+      width: 9px;
+      height: 9px;
+      top: 5px;
+      border-radius: 50%;
+      margin-left: 14px;
+      background-color: #fff;
+        }
+      
+      .find_friends2::after {
+        content: '';
+        top: 10px;
+      left: -2px;
+        margin-bottom: 5px;
+        border: 2px solid #fff;
+        border-bottom: none;
+        border-left: none;
+        border-radius: 5px 5px 0px 0px;
+        position: absolute;
+        width: 9px;
+        height: 8px;
+      }
+
+#request_got_text {
+    background-color: #cc0000;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    z-index: 2;
+    right: -1px;
+    top: 0px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    line-height: 13px;
+    font-size: 10px;
+    text-shadow: 1px 0px #fff;
+}
+/*
+.space {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    margin-top: 245px;
+}*/
+
+@media screen and (min-width: 321px) {
+    .box {
+        width: 95%;        
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .box {
+        width: 98%;        
+        margin-left: 2%;
+    }
+}
+
+
+/* for designing inside display box*/
+#displaybox .total_user_profile_info {
+margin: 20px 5px 5px 15px;
+}
+
+#displaybox .userprofile_outer {
+    margin-top: 25px;
+}
+
+#displaybox .userprofile {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#displaybox .profile_pic {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000000;
+}
+
+#displaybox .user_info {
+  width: calc(100% - 40px);
+  width: -webkit-calc(100% - 40px);
+  width: -moz-calc(100% - 40px);
+  padding-left: 15px;
+}
+
+#displaybox .user_info .username{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 3px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#displaybox .user_info .ai2kla8_kdiocy {
+text-decoration: none;
+color: #000000;
+}
+
+#displaybox .user_info .gmail{
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#displaybox .addfriend{
+    width: 200px;
+    height: 20px;
+background-color: #3b5998;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+
+#displaybox .cancelsentrequest{
+    width: 200px;
+    height: 20px;
+background-color: #3b5998;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+
+#displaybox .unfriend{
+    width: 200px;
+    height: 20px;
+background-color: #3b5998;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+
+#displaybox .this_is_your_best_friend{
+    width: 200px;
+    height: 20px;
+background-color: #3b5998;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+
+#displaybox .acceptrequest {
+    width: 110px;
+    height: 20px;
+background-color: #3b5998;
+color: #fff;
+border: none;
+cursor: pointer;
+padding-left: 1px;
+}
+
+#displaybox .cancelrequest {
+    width: 110px;
+    height: 20px;
+background-color: #3b5998;
+color: #fff;
+border: none;
+cursor: pointer;
+padding-left: 1px;
+margin-left: 5px;
+}
+
+
+
+
+   

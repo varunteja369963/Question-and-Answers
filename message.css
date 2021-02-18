@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, Courier New, serif, Helvetica, sans-serif; 
+}
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    margin: 0px;
+}
+
+#displaymessages {
+    height: 85vh;
+    overflow:auto;
+    overflow-x: hidden;
+}
+
+#div_to_text {
+    display: flex;
+ 
+}
+#inner_div_to_text {
+    display: flex;
+    width: 100%;
+}
+
+#space_for_scroolbar {
+  width: 15px;
+}
+
+#for_texting {
+    width: 92%;
+}
+
+#for_submitting {
+ width: 8%;
+ background-color: #0084b4;
+ }
+
+#message {
+    width: 100%;
+    resize: none;
+    height: 30px;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-left: 10px;
+    border: 1px solid #000000;
+    border-left: none;
+}
+
+#send {
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+    padding: 7px 5px;
+}
+
+
