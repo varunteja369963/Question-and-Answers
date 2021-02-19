@@ -87,6 +87,11 @@ This application also provides an option to the user for contribution to their p
 You can chat to friends
 <br>
 ![Chat](https://res.cloudinary.com/sabiduria-in/image/upload/v1613725476/QA%20Images/messages2.jpg)
+<br>
+<br>
+<br>
+<br>
+#### If you face any problem, just message me at linkedin: https://www.linkedin.com/in/varun-teja-04a037200/
 
 
 
