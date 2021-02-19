@@ -70,13 +70,7 @@ After registration confirmation link will be sent to registered mail
 <br>
 <br>
 <br>
-## 9. Chat with your friends
-You can chat to friends
-![Chat](https://res.cloudinary.com/sabiduria-in/image/upload/v1613725476/QA%20Images/messages2.jpg)
-<br>
-<br>
-<br>
-## 10. Ask contributors to help for the project
+## 9. Ask contributors to help for the project
 This application also provides an option to the user for contribution to their project. How this goes is 
 ### Post your project
 ![Post project detials](https://res.cloudinary.com/sabiduria-in/image/upload/v1613725433/QA%20Images/askquestion2.png)
@@ -84,6 +78,14 @@ This application also provides an option to the user for contribution to their p
 ![Posting project](https://res.cloudinary.com/sabiduria-in/image/upload/v1613725449/QA%20Images/question-inside.png)
 ### They agree to help 
 ![Client agreeing to contribute to the project](https://res.cloudinary.com/sabiduria-in/image/upload/v1613725447/QA%20Images/question2-inside.png)
+<br>
+<br>
+<br>
+## 10. Chat with your friends
+You can chat to friends
+<br>
+![Chat](https://res.cloudinary.com/sabiduria-in/image/upload/v1613725476/QA%20Images/messages2.jpg)
+
 
 
 
