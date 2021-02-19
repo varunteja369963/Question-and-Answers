@@ -1,6 +1,7 @@
 # Question & Answer Website - Designed & Developed by sabiduria.in
  Open source question and answer website like stackoverflow and quora used to post questions, create personal groups and chat with friends. 
 <br>
+<br>
 '''Import sql file localhost.sql in phpmyadmin before using'''
 <br>
 <br>
