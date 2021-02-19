@@ -1,7 +1,7 @@
 # Question & Answer Website - Designed & Developed by sabiduria.in
  Open source question and answer website like stackoverflow and quora used to post questions, create personal groups and chat with friends. 
- 
-Import sql file localhost.sql in phpmyadmin before using
+<br>
+'''Import sql file localhost.sql in phpmyadmin before using'''
 <br>
 <br>
 # This website contains following features
@@ -61,6 +61,7 @@ This questions are only visible to the members in the group.
 <br>
 ## 7. Register Page
 After registration confirmation link will be sent to registered mail
+<br>
 ![Register Page](https://res.cloudinary.com/sabiduria-in/image/upload/v1613728214/QA%20Images/register.png)
 <br>
 <br>
